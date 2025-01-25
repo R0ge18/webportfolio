@@ -53,11 +53,11 @@ main {
 }
 
 #projects-slider {
-    top: 22%;  
+    top: 10%;  
     right: 0%;
     position: absolute;
     width: 50%;
-    height: 75%; 
+    height: 80%; 
     z-index: 3;
     background-color: transparent;
     overflow: auto;
@@ -72,7 +72,7 @@ main {
     height: 16.875em;
     border: solid white 0.2em;
     margin-left: 10em;
-    margin-top: 1em;
+    margin-top: 4em;
     margin-bottom: 1em;
     background-color: gray;
     color: black;
@@ -80,11 +80,10 @@ main {
 }
 
 .content:hover {
-    width: 34em; 
-    height: 20.875em; 
-    filter: none; 
+    transform: scale(1.1333); /* Scale up the element uniformly */
+    filter: none; /* Remove blur on hover */
 }
 
 .content:not(:hover) {
-    filter: blur(0.5px); 
+    filter: blur(0.5px); /* Apply blur when not hovered */
 }
